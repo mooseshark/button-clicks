@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mooseshark Games: Button Clicks</title>
+	<link href="buttonClicksStyleSheet.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/PNG" href="imagery/msFavIcon.png">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="buttonClicks.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="menuDiv" style="float: right">	
+			<ul class="menu">
+	  			<li>
+	  				<a href="#"><img class="menuImage" src="imagery/menuButton.png" /></a>
+	  				<ul>
+	  					<li><span><a href="#"  class="menuItem" value="Stats" onclick="clickStats();">Stats</a></span></li>
+	  					<li><span><a href="#"  class="menuItem" value="Reset" onclick="clickReset();">Reset</a></span></li>
+						<li><span><a href="#"  class="menuItem" value="New Game" onclick="clickNewGame();">New Game</a></span></li>
+						<li><span><a href="https://ianhutchcraft.com/"  class="menuItem" value="Quit">Quit</a></span></li>
+	  				</ul>
+	  			</li>
+	  		</ul>
+		</div>
+		<header style="text-align: center">Button Clicks</header>
+	  	<h2 style="text-align: center" class="title">Set Difficulty</h2>
+	  	<h3 style="text-align: center" class="stats"></h3>
+	  	<article class="contentWrap">
+			<article class="content">
+				<input id="easy" type="button" value="Easy" onclick="setDifficulty(this.id);" style="float: left; width: 120px;" />
+				<input id="medium" type="button" value="Medium" onclick="setDifficulty(this.id);" style="float: left; width: 120px;" />
+				<input id="hard" type="button" value="Hard" onclick="setDifficulty(this.id);" style="float: left; width: 120px;" />
+				<input id="insanity" type="button" value="Insanity" onclick="setDifficulty(this.id);" style="float: left; width: 120px;" />
+			</article>
+		</article>
+	</div>
+</body>
+</html>
